@@ -1,0 +1,4 @@
+/node_modules
+mpm-debug.log
+.DS_Store
+/*.env
