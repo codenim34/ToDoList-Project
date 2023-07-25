@@ -10,9 +10,7 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://xcadettasnim1834:LMU77gdk21@cluster0.nmhkqvq.mongodb.net/todolistDB", {
-  useNewUrlParser: true,
-});
+mongoose.connect("mongodb://127.0.0.1:27017/blogDB", {useNewUrlParser: true});
 
 const itemsSchema = new mongoose.Schema({
   name: String,
